@@ -21,11 +21,6 @@ void generate_pin()
         printf("\nCannot open file!");
         exit(1);
     }
-    else if(pin<1000 && pin>9999){
-    printf("\n  YOUR PIN IS NOT 4 DIGIT PIN!!!!!!\n PLEASE ENTER VALID PIN");
-   
-    }
-
     /*
       Write PIN to the file
     */else{
