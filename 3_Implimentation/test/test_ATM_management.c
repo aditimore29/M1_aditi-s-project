@@ -21,14 +21,27 @@ void test_ATM_management()
         printf("\n 2.ENTER PIN for further transactions");
         printf("\n 3.EXIT\n");
         scanf("%d",&choice);
-        if(choice==1){ system("cls");
-                    generate_pin();
-                   break;}
-        else if(choice==2){ system("cls");
-                    enter_pin();
-                    break;}
-        else if(choice==3){ Exit();break;}
-        else {printf("\n INVALID CHOICE");}
+        if(choice==1)
+        { 
+            system("cls");
+            generate_pin();
+             break;
+        }
+        else if(choice==2)
+        { 
+            system("cls");
+            enter_pin();
+          break;
+        }
+        else if(choice==3)
+        { 
+            Exit();
+            break;
+        }
+        else
+        {
+            printf("\n INVALID CHOICE");
+        }
         
     }while(choice!=3);
     

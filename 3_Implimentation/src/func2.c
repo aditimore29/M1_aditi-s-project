@@ -44,9 +44,8 @@ void enter_pin(void)
     //  read PIN and store from user
     char sPin[8];
     int Valid = 0,s;
-
     printf("\n\nEnter the PIN: \n");
-    scanf("%s", sPin);
+    scanf("%s",&sPin);
 
     fp = fopen("pin.txt", "r");
     if (NULL == fp) {
