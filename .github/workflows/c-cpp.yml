@@ -1,0 +1,18 @@
+--- 
+jobs: 
+  build: 
+    runs-on: ubantu-latest
+    steps: 
+      - 
+        uses: actions/checkout@v3
+      - 
+        name: Build
+        run: "make -C 3_Implimentation/ all"
+name: "Build CI - Linux"
+true: 
+  pull_request: 
+    branches: 
+      - main
+  push: 
+    branches: 
+      - main
